@@ -16,16 +16,16 @@ header {
     overflow: hidden;
 }
 
-h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
-nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -35,11 +35,11 @@ nav {
     width:100%;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
