@@ -1,6 +1,7 @@
 * {
     /* border: 1px solid black; */
     /* background-color: lightgray; */
+    box-sizing: border-box;
 }
 .row {
     /* border: 1px solid orange; */
@@ -12,8 +13,8 @@
 .navbar-brand {
     font-family:"Times New Roman", 'Times New Roman', Times, serif;
     font-size:40px;
-    /* color: goldenrod;  */
-    background-color: indianred;
+    color: goldenrod; 
+    background-color: lightgreen;
     padding: 20px;
 }
 
@@ -24,7 +25,9 @@
     /* Create White space on NAV bar Left */
     margin-left: 25px;
     margin-right: 25px; 
-    word-wrap: none;
+    /* Padding 0 remove navbar space on top */
+    padding:0;
+    border-bottom: 2px solid grey;
 }
 
 
@@ -39,32 +42,38 @@
 }
 
 #pic {
+    width:250px;
     max-width: 100%;
     height: auto;
+    display:block;
     margin-right:20px;
 }
+
+
 
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
     body {
-      background-color: blue;
-      color: white;
+      background-color: white;
+      color: black;
+      align-content: center;
     }
   }
   
   /* On screens that are 600px wide or less, the background color is olive */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 640px) {
     body {
-      background-color: brown;
-      color: orange;
+      background-color:white;
+      color: black;
     }
 
-    /* 
-    .nav {
-        overflow-y: visible;
-        margin-right: auto;
-        line-height: 100px;
-
+    #pic {
+        width:150%;
     }
-    */
-  }
+
+    .navbar-brand {
+        width:110%;
+        align-content: center;
+    }
+
+   
