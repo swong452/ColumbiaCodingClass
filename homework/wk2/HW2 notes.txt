@@ -1,0 +1,10 @@
+HW2
+
+Concept to be familar with 
+1) Break Point / Media Query: change Pic Size 
+2) Float left clear on PIC , so any text after starts a new line
+3) NAV bar brand: change to full width when shrink
+4) NAV Item flow below the bar
+
+https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar
+

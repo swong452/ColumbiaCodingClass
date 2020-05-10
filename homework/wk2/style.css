@@ -1,0 +1,70 @@
+* {
+    /* border: 1px solid black; */
+    /* background-color: lightgray; */
+}
+.row {
+    /* border: 1px solid orange; */
+    line-height: 30px;
+    padding:25px;
+    /* background:green; */
+}
+
+.navbar-brand {
+    font-family:"Times New Roman", 'Times New Roman', Times, serif;
+    font-size:40px;
+    /* color: goldenrod;  */
+    background-color: indianred;
+    padding: 20px;
+}
+
+.navbar {
+    /* border: 1px solid brown; */
+    background-color: white;
+    line-height: 40px;
+    /* Create White space on NAV bar Left */
+    margin-left: 25px;
+    margin-right: 25px; 
+    word-wrap: none;
+}
+
+
+.nav-item {
+    padding:10px;
+    word-wrap: none;
+}
+
+
+#col1{
+    color: green;
+}
+
+#pic {
+    max-width: 100%;
+    height: auto;
+    margin-right:20px;
+}
+
+/* On screens that are 992px wide or less, the background color is blue */
+@media screen and (max-width: 992px) {
+    body {
+      background-color: blue;
+      color: white;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, the background color is olive */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: brown;
+      color: orange;
+    }
+
+    /* 
+    .nav {
+        overflow-y: visible;
+        margin-right: auto;
+        line-height: 100px;
+
+    }
+    */
+  }
