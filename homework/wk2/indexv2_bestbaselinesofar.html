@@ -14,30 +14,40 @@
 
     <!-- Use expand-sm, not expand-lg; else , smaller screen will have brand
     start in middle, and right side items disappear. so use sm -->
-    <nav class="navbar navbar-nav navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="#"> Gandalf The Grey </a>
-                
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- To Align Items to the right: ml-auto -->
-            <!-- Removed 'nav', else, smaller screen , items will line up vertically -->
-            <ul class="navbar-nav ml-auto">
+    <!-- also removed navbar-nav -->
+    <nav class="navbar navbar-expand-sm navbar-light">
 
-                <!-- First button: Default to Home , thus use Active -->
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-                </li>
+        <!-- Add a container and navbar-header helps to push items down when 
+        smaller browser size -->
+        <div class="container-fluid">
+            <div class="navbar-header ml-auto">
+            <!-- <div class="navbar-header"> -->
+                <a class="navbar-brand" href="#"> Gandalf The Grey </a>
+                        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- To Align Items to the right: ml-auto -->
+                    <!-- Removed 'nav', else, smaller screen , items will line up vertically -->
+                    <!-- <ul class="navbar-nav ml-auto"> -->
+                    <ul class="nav navbar-nav">
 
-                <!-- Another Button: Portfolio-->
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
-                </li>
+                        <!-- First button: Default to Home , thus use Active -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
 
-                <!-- Another Button: Contact -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
+                        <!-- Another Button: Portfolio-->
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                        </li>
 
-            </ul>
+                        <!-- Another Button: Contact -->
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>    
         </div>
     </nav>
 

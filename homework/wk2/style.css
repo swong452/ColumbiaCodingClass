@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-h2, p {
+h2, p, .container-fluid {
     background-color: white;
 }
 .row {
@@ -13,14 +13,6 @@ h2, p {
     padding-left: 25px;
     padding-right: 25px;
     background: lightgray;
-}
-
-.navbar-brand {
-    font-family:"Times New Roman", 'Times New Roman', Times, serif;
-    font-size:40px;
-    color: goldenrod; 
-    background-color: rgb(170, 238, 170);
-    padding: 20px;
 }
 
 .navbar {
@@ -35,16 +27,23 @@ h2, p {
     border-bottom: 2px solid grey;
 }
 
-#navbarSupportedContent {
-    background-color: white;
+.navbar-brand {
+    font-family:"Times New Roman", 'Times New Roman', Times, serif;
+    font-size:40px;
+    color: goldenrod; 
+    background-color: rgb(170, 238, 170);
+    padding: 20px;
 }
 
+#navbarSupportedContent {
+    background-color: white;
+    float: right;
+}
 
 .nav-item {
     padding:10px;
     background-color: white;
 }
-
 
 #row1 {
     /* Add padding space so it can be 
@@ -101,5 +100,7 @@ h2, p {
         width:100%;
         text-align: center;
     }
+
+
 
    
