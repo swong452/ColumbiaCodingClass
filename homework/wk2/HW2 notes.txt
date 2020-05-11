@@ -8,3 +8,5 @@ Concept to be familar with
 
 https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_navbar
 
+Below may be used to stack when xm scrren is used For Pic and text
+https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_grid_small&stacked=h

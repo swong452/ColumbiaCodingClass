@@ -1,13 +1,18 @@
 * {
     /* border: 1px solid black; */
-    /* background-color: lightgray; */
+    background-color: lightgrey;
     box-sizing: border-box;
+}
+
+h2, p {
+    background-color: white;
 }
 .row {
     /* border: 1px solid orange; */
     line-height: 30px;
-    padding:25px;
-    /* background:green; */
+    padding-left: 25px;
+    padding-right: 25px;
+    background: lightgray;
 }
 
 .navbar-brand {
@@ -30,15 +35,32 @@
     border-bottom: 2px solid grey;
 }
 
-
-.nav-item {
-    padding:10px;
-    word-wrap: none;
+#navbarSupportedContent {
+    background-color: white;
 }
 
 
+.nav-item {
+    padding:10px;
+    background-color: white;
+
+}
+
+#row1 {
+    padding-top:40px;
+}
+
 #col1{
     color: green;
+    background-color: white;
+}
+
+#col2 {
+    background-color: white;
+}
+
+#col1 h2 {
+    line-height: 100px;
 }
 
 #pic {
@@ -49,8 +71,6 @@
     margin-right:20px;
 }
 
-
-
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
     body {
@@ -60,8 +80,8 @@
     }
   }
   
-  /* On screens that are 600px wide or less, the background color is olive */
-  @media screen and (max-width: 640px) {
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 640px) {
     body {
       background-color:white;
       color: black;
@@ -71,9 +91,13 @@
         width:150%;
     }
 
+    .navbar {
+        margin:0;
+    }
+
     .navbar-brand {
-        width:110%;
-        align-content: center;
+        width:100%;
+        text-align: center;
     }
 
    
