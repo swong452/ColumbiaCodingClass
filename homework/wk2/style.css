@@ -99,11 +99,22 @@ h2, p, .container-fluid {
     }
 
     .navbar-brand {
-        min-width:100%;
+        width:100%;
         text-align: center;
+        /* when smaller size, make no margin */
+        margin:0;
     }
 
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: nowrap;
+        flex-shrink: 0;
+        align-items: center;
+        align-content: center;
+        align-self: flex-end; */
 
+    }
 
 
    
