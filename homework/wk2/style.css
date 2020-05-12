@@ -25,6 +25,15 @@ h2, p, .container-fluid {
     /* Padding 0 remove navbar space on top */
     padding:0;
     border-bottom: 2px solid grey;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    > * {
+        flex-shrink: 0;
+    }
 }
 
 .navbar-brand {
@@ -37,7 +46,6 @@ h2, p, .container-fluid {
 
 #navbarSupportedContent {
     background-color: white;
-    float: right;
 }
 
 .nav-item {
@@ -94,6 +102,17 @@ h2, p, .container-fluid {
 
     .navbar {
         margin:0;
+
+        border-bottom: 2px solid grey;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    > * {
+        flex-shrink: 0;
+    }
     }
 
     .navbar-brand {
