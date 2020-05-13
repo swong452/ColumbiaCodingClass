@@ -37,8 +37,9 @@ h2, p, .container-fluid {
 
 #navbarSupportedContent {
     background-color: white;
+    /* Must use Block to cause nav items 
+    wrap down to next new line !! */
     display: block;
-    width:100%;
 }
 
 .nav-item {
@@ -66,7 +67,10 @@ h2, p, .container-fluid {
 }
 
 #pic {
+    /* Set a default pic size first 250px */
     width:250px;
+    /* To make pic responsive need max width
+    and height auto set */
     max-width: 100%;
     height: auto;
     display:block;
@@ -105,16 +109,20 @@ h2, p, .container-fluid {
         margin:0;
     }
 
-    .navbar-nav {
+    #navbar-nav {
+        /* Need to set display flex to cause
+        nav items flow in horizontal direction */
         display: flex;
         flex-direction: row;
-        /* flex-wrap: nowrap;
-        flex-shrink: 0;
-        align-items: center;
-        align-content: center;
-        align-self: flex-end; */
-
+        /* nav items have white color all the
+        way to the right if margin right 100% */
+        margin-right:100%;
     }
 
-
-   
+    /* Making Flex-basis and flex-grow to 0, 
+    when size shrink, will make nav-items go 
+    to the default center position */
+    #navbarSupportedContent {
+        flex-basis: 0%;
+        flex-grow:0;
+    }

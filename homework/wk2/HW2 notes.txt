@@ -1,4 +1,6 @@
 HW2
+* Remove the ml-auto, then add justify-content: space-evently under #navbar-nav: so when screen size is smaller,
+item is evenly spaced. 
 
 Concept to be familar with 
 1) Break Point / Media Query: change Pic Size 
