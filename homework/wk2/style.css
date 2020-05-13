@@ -80,6 +80,16 @@ h2, p, .container-fluid {
 form, label, .form-group, #emailHelp {
     background-color: white;
 }
+
+/* Create white space above Full Name to the line */
+.form-group {
+    margin-top:30px;
+}
+
+/* Create white space below submit button */
+.btn-primary {
+    margin-bottom: 30px;
+}
   
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 640px) {
@@ -122,5 +132,9 @@ form, label, .form-group, #emailHelp {
         flex-grow:0;
     }
 
+    .nav-item {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
 }
