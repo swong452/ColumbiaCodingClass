@@ -95,30 +95,30 @@ form, label, .form-group, #emailHelp {
 /* Portfolio */
   
 #wrapperpic {
-    /* border:1px solid red; */
+    border:1px solid red;
     background-color: white;
     display:block;
     justify-content: space-evenly;
+    width:50%;
 }
 
 #portfolio_row1, #portfolio_row2, #portfolio_row3, #pf4 {
-    background-color:white;
+    /* normal view: grey around pic */
+    background-color:lightgrey;
 }
 
   /* Make the image to responsive */
   .image {
     border: 1px solid green;
     width:100%;
-    /* max-width: 100%; */
-    height: auto;
+    /* height: auto; */
     margin:2%;
   }
 
   .image2 {
     border: 1px solid green;
     width: 46%;
-    /* max-width:40%; */
-    height: auto;
+    /* height: auto; */
     margin:2%;
   }
  
