@@ -9,6 +9,17 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            background-color: white;
+        }
+
+        .row {
+            background-color: white;
+        }
+
+    </style>
 </head>
 <body>
 
@@ -17,33 +28,30 @@
     <!-- also removed navbar-nav -->
     <nav class="navbar navbar-expand-sm navbar-light">
 
-        <!-- Add a container and navbar-header helps to push items down when 
-        smaller browser size -->
-                <a class="navbar-brand" href="#"> Gandalf The Grey </a>
+        <a class="navbar-brand" href="index.html"> Gandalf The Grey </a>
                         
-                <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
-                    <!-- To Align Items to the right: ml-auto -->
-                    <!-- Removed 'nav', else, smaller screen , items will line up vertically -->
-                    <ul class="navbar-nav ml-auto" id="navbar-nav">
-                    <!-- <ul class="navbar-nav"> -->
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+            <!-- To Align Items to the right: ml-auto -->
+            <!-- Removed 'nav', else, smaller screen , items will line up vertically -->
+            <ul class="navbar-nav ml-auto" id="navbar-nav">
 
-                        <!-- First button: Default to Home , thus use Active -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="indexv2_bestbaselinesofar.html">About <span class="sr-only">(current)</span></a>
-                        </li>
+                <!-- First button: Default to Home , thus use Active -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
 
-                        <!-- Another Button: Portfolio-->
-                        <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
+                <!-- Another Button: Portfolio-->
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
 
-                        <!-- Another Button: Contact -->
-                        <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                <!-- Another Button: Contact -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
 
-                    </ul>
-                </div> 
+            </ul>
+        </div> 
     </nav>
 
   
@@ -51,41 +59,46 @@
     <!-- Responsive class "container-fluid" will allow stretc what is available in screen  -->
     <div class="container-fluid">
 
-        <!-- 1st row: About Me -->
-        <div class="row" id="row1">
+        <!-- 1st row: Portfolio -->
+        <div class="row" id="row1 pf4">
             <div class="col-sm-9" id="col1">
                 <h2> Portfoilo </h2>
                 <div style="border-bottom: 1px solid black;"></div>
             </div>
         </div>
 
-        <!-- 2nd Row -->
-        <div class="row">
-            <div class="col-sm-9" id="col2">
-                <!-- <img src="Gandalf.jpg" class="img-fluid float-left" width="250px" height="250px" alt="Gandalf" id="pic"> -->
-                  <img src="Gandalf.jpg" class="img-fluid float-left" alt="Gandalf" id="pic">
-           
-
-                <p> Let me introduce Myself using Elvish Language (Sindarin) </p>
-                <p> Nin est- na- Gandalf i mith. Im am hi at i turn -o i tide. Some núr called nin Greybeard before, but hi, im am reallui Gandalf i thilivern. 
-                    Sauramen used na n- bo i man haer but ho has changed.
-                </p>
-                <p> Nam nulla est, sollicitudin non egestas ac, faucibus vel tellus. Curabitur vitae ex ultricies, 
-                    maximus ligula non, rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                    Nam sit amet urna ut nisi lacinia ullamcorper. Vestibulum quis leo a arcu dignissim luctus. 
-                    Cras enim augue, venenatis venenatis convallis in, convallis et felis.
-                </p>
-
-                <!-- May be Add a break line for nicer visual -->
-                <!-- <br> -->
-
-                <p> Nam nulla est, sollicitudin non egestas ac, faucibus vel tellus. Curabitur vitae ex ultricies, 
-                  maximus ligula non, rhoncus lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
-                  Nam sit amet urna ut nisi lacinia ullamcorper. Vestibulum quis leo a arcu dignissim luctus. 
-                  Cras enim augue, venenatis venenatis convallis in, convallis et felis.
-              </p>
+        <!-- 2nd Row, Pic1 and Pic 2 -->
+        <!-- mx-audo align the div wrapperpic content center -->
+        <!-- <div class="col-sm-9 mx-auto" id="wrapperpic"> -->
+        <div class="row" id="portfolio_row1">
+            <div class="col-sm-9 twopic" id="col2">   
+                <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                <img src="Gandalf.jpg" alt="G1" class="rounded image" >
+                <!-- PIC #2 class="img-fluid float-left" width="250px" height="250px"> -->  
+                <img src="Gandalf.jpg" alt="G2" class="rounded image">
             </div>
         </div>
+
+        <!-- 3rd Row, Pic3 and Pic4 -->
+        <div class="row" id="portfolio_row2" >
+            <div class="col-sm-9 twopic" id="col2">   
+                <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                <img src="Gandalf.jpg" alt="G1" class="rounded image" >
+                <!-- PIC #2 class="img-fluid float-left" width="250px" height="250px"> -->  
+                <img src="Gandalf.jpg" alt="G2" class="rounded image">
+            </div>
+        </div>
+
+        <!-- 4th Row, Pic5 and Pic6 -->
+        <div class="row" id="portfolio_row3">
+            <div class="col-sm-9 onepic" id="col2">   
+                <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
+                <img src="Gandalf.jpg" alt="G1" class="rounded image2" >
+            </div>
+        </div>
+        <!-- </div> -->
+
+
     </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

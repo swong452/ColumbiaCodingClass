@@ -90,6 +90,49 @@ form, label, .form-group, #emailHelp {
 .btn-primary {
     margin-bottom: 30px;
 }
+
+/* ============================= */
+/* Portfolio */
+  
+#wrapperpic {
+    /* border:1px solid red; */
+    background-color: white;
+    display:block;
+    justify-content: space-evenly;
+}
+
+#portfolio_row1, #portfolio_row2, #portfolio_row3, #pf4 {
+    background-color:white;
+}
+
+  /* Make the image to responsive */
+  .image {
+    border: 1px solid green;
+    width:100%;
+    /* max-width: 100%; */
+    height: auto;
+    margin:2%;
+  }
+
+  .image2 {
+    border: 1px solid green;
+    width: 46%;
+    /* max-width:40%; */
+    height: auto;
+    margin:2%;
+  }
+ 
+/* Align the div content, which
+has 2 x pic, to center */
+.twopic {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.onepic {
+    display: block;
+    justify-content: space-evenly;
+}
   
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 640px) {
@@ -131,10 +174,23 @@ form, label, .form-group, #emailHelp {
         flex-basis: 0%;
         flex-grow:0;
     }
-
+    /* When small screen, make the nav item
+    looks more evenly spaced */
     .nav-item {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    /*  BELOW IS FOR PORTFOLIO CUSTOMIZED */
+
+    /* Make the div twopic as block so when size
+    shrink, force the 2nd pic down */
+    .twopic {
+        display: block;
+    }
+
+    .image, .image2 {
+        width:80%;
     }
 
 }
