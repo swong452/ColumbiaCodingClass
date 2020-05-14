@@ -21,7 +21,7 @@
     <!-- Use expand-sm, not expand-lg; else , smaller screen will have brand
     start in middle, and right side items disappear. so use sm -->
     <!-- also removed navbar-nav -->
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light" id="customnav">
 
         <a class="navbar-brand" href="index.html"> Gandalf The Grey </a>
                         
@@ -51,12 +51,13 @@
 
   
 
-    <!-- Responsive class "container-fluid" will allow stretc what is available in screen  -->
+    <!-- Question: use only container seem stretch the pic inside less
+        but without "container-fluid" image size jump up by quantum -->
     <div class="container-fluid">
 
         <!-- 1st row: Portfolio -->
         <div class="row" id="row1">
-            <div class="col-sm-9" id="col1">
+            <div class="col-sm-7" id="col1">
                 <h2> Portfoilo </h2>
                 <div style="border-bottom: 1px solid black;"></div>
             </div>
@@ -66,25 +67,25 @@
         <!-- mx-audo align the div wrapperpic content center -->
         <!-- <div class="col-sm-9 mx-auto" id="wrapperpic"> -->
         <div class="row" id="portfolio_row1">
-            <div class="col-sm-9 twopic" id="col2">   
+            <div class="col-sm-7 twopic" id="col2">   
                 <!-- PIC #1 class="img-fluid float-left" width="250px" height="250px"> -->
-                <img src="Gandalf.jpg" alt="G1" class="rounded image image-fluid" width="250px" height="200px">  
-                <img src="Gandalf.jpg" alt="G2" class="rounded image image-fluid" width="250px" height="200px">
+                <img src="Gandalf.jpg" alt="G1" class="rounded image image-fluid" height="200px">  
+                <img src="Gandalf.jpg" alt="G2" class="rounded image image-fluid" height="200px">
             </div>
         </div>
 
         <!-- 3rd Row, Pic3 and Pic4 -->
         <div class="row" id="portfolio_row2" >
-            <div class="col-sm-9 twopic" id="col2">   
-                <img src="Gandalf.jpg" alt="G1" class="rounded image image-fluid" width="250px" height="200px" >  
-                <img src="Gandalf.jpg" alt="G2" class="rounded image image-fluid" width="250px" height="200px">
+            <div class="col-sm-7 twopic" id="col2">   
+                <img src="Gandalf.jpg" alt="G1" class="rounded image image-fluid" height="200px" >  
+                <img src="Gandalf.jpg" alt="G2" class="rounded image image-fluid" height="200px">
             </div>
         </div>
 
         <!-- 4th Row, Pic5 and Pic6 -->
         <div class="row" id="portfolio_row3">
-            <div class="col-sm-9 onepic" id="col2">   
-                <img src="Gandalf.jpg" alt="G1" class="rounded image-fluid image2" width="250px" height="200px">
+            <div class="col-sm-7 onepic" id="col2">   
+                <img src="Gandalf.jpg" alt="G1" class="rounded image-fluid image2" height="200px">
             </div>
         <!-- </div> -->
         </div>

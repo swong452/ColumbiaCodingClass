@@ -83,12 +83,12 @@ form, label, .form-group, #emailHelp {
 
 /* Create white space above Full Name to the line */
 .form-group {
-    margin-top:30px;
+    margin-top:15px;
 }
 
 /* Create white space below submit button */
 .btn-primary {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 /* ============================= */
@@ -133,6 +133,10 @@ has 2 x pic, to center */
     display: block;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 768px) {
+
+}
   
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 640px) {
@@ -174,13 +178,21 @@ has 2 x pic, to center */
         flex-basis: 0%;
         flex-grow:0;
     }
+
     /* When small screen, make the nav item
     looks more evenly spaced */
     .nav-item {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
+    /* At px640, force the nav bar to overflow
+    to next line */
+    #customnav {
+        display:block;
+    }
+
+    /* ============================================ */
     /*  BELOW IS FOR PORTFOLIO CUSTOMIZED */
 
     /* Make the div twopic as block so when size
