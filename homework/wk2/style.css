@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* This bk colr cover the bottom part grey */
     background-color: lightgrey;
     box-sizing: border-box;
@@ -7,12 +7,6 @@
 
 h2, p, .container-fluid {
     background-color: white;
-}
-.row {
-    line-height: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background: lightgray;
 }
 
 .navbar {
@@ -47,6 +41,13 @@ h2, p, .container-fluid {
     background-color: white;
 }
 
+.row {
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: lightgray;
+}
+
 #row1 {
     /* Add padding space so it can be 
     colored grey right above "About Me" */
@@ -77,6 +78,9 @@ h2, p, .container-fluid {
     margin-right:20px;
 }
 
+/* ============================= */
+/*          FORM Specific        */
+/* ============================= */
 form, label, .form-group, #emailHelp {
     background-color: white;
 }
@@ -92,30 +96,31 @@ form, label, .form-group, #emailHelp {
 }
 
 /* ============================= */
-/* Portfolio */
-  
-#wrapperpic {
-    border:1px solid red;
-    background-color: white;
-    display:block;
-    justify-content: space-evenly;
-    width:50%;
+/*             Portfolio         */
+/* ============================= */
+
+
+#pfrow{
+    /* normal view: grey around pic */
+    background-color:white;
+    /* padding-left: 30px; */
+    /* padding-right: 30px; */
+    padding-top:30px;
 }
 
-#portfolio_row1, #portfolio_row2, #portfolio_row3, #pf4 {
-    /* normal view: grey around pic */
-    background-color:lightgrey;
+#pfcontainer {
+    background-color: lightgray;
 }
 
   /* Make the image to responsive */
-  .image {
+.image {
     border: 1px solid green;
     width:100%;
     /* height: auto; */
     margin:2%;
   }
 
-  .image2 {
+.image2 {
     border: 1px solid green;
     width: 46%;
     /* height: auto; */
@@ -142,7 +147,7 @@ h6 {
     width:100%;
     text-align: center;
     background-color: lightsalmon;
-    /* margin-left:5%; */
+    /* padding:unset; */
 }
 
 @media screen and (max-width: 768px) {
@@ -214,6 +219,17 @@ h6 {
 
     .image, .image2 {
         width:80%;
+    }
+
+    /* After smaller screen , default bootstrap
+    breakpoint reached and changed the display behavor
+    hence, restate here how the pic should
+    be displayed */
+    .twopic {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        width: 100%;
     }
 
 }
