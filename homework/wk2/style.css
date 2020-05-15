@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     /* This bk colr cover the bottom part grey */
     background-color: lightgrey;
     box-sizing: border-box;
@@ -127,11 +127,22 @@ has 2 x pic, to center */
 .twopic {
     display: flex;
     justify-content: space-evenly;
+    position: relative;
+    width: 100%;
 }
 
 .onepic {
     display: block;
     justify-content: space-evenly;
+}
+
+h6 {
+    position: absolute;
+    bottom:3px;
+    width:100%;
+    text-align: center;
+    background-color: lightsalmon;
+    /* margin-left:5%; */
 }
 
 @media screen and (max-width: 768px) {
