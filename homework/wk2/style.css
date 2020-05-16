@@ -78,6 +78,30 @@ h2, p, .container-fluid {
     margin-right:20px;
 }
 
+/* ======= Footer Specific CSS =========== */
+
+/* Note the use of vh instead of px 
+on min-height. this will make the footer 
+stay down , even when scroll bar appear. */
+#foot-container {
+    position: relative;
+    min-height: 75vh;
+}
+
+#footer {
+    padding-top: 10px;
+    background-color: rgb(125, 145, 125);
+    color: honeydew;
+    height: 50px;
+    text-align: center;
+    border-top: 2px dotted honeydew;
+    position: absolute;
+    /* Can use  bottom 0 to keep it down    
+    but already have fixed-bottom   */
+    /* bottom:0; */
+    width:100%;
+}
+
 /* ============================= */
 /*          FORM Specific        */
 /* ============================= */
@@ -161,7 +185,7 @@ h6 {
     }
 
     #pic {
-        width:150%;
+        width:100%;
     }
 
     .navbar {
