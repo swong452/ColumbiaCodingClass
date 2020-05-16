@@ -103,8 +103,6 @@ form, label, .form-group, #emailHelp {
 #pfrow{
     /* normal view: grey around pic */
     background-color:white;
-    /* padding-left: 30px; */
-    /* padding-right: 30px; */
     padding-top:30px;
 }
 
@@ -116,14 +114,12 @@ form, label, .form-group, #emailHelp {
 .image {
     border: 1px solid green;
     width:100%;
-    /* height: auto; */
     margin:2%;
   }
 
 .image2 {
     border: 1px solid green;
     width: 46%;
-    /* height: auto; */
     margin:2%;
   }
  
@@ -133,7 +129,12 @@ has 2 x pic, to center */
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    width: 100%;
+    /* Set width 50% so at breakpoint 768px
+    two pic will next to each other. Else
+    it seems breakpoint 769px cause image
+    to take up whole width.*/
+    width:50%;
+    border: 15px solid white;
 }
 
 .onepic {
@@ -146,14 +147,12 @@ h6 {
     bottom:3px;
     width:100%;
     text-align: center;
-    background-color: lightsalmon;
-    /* padding:unset; */
+    background-color: rgb(89, 133, 89);
+    line-height: 40px;
+    color:white;
 }
 
-@media screen and (max-width: 768px) {
 
-}
-  
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 640px) {
     body {
@@ -214,7 +213,7 @@ h6 {
     /* Make the div twopic as block so when size
     shrink, force the 2nd pic down */
     .twopic {
-        display: block;
+        /* display: block; */
     }
 
     .image, .image2 {
@@ -226,7 +225,8 @@ h6 {
     hence, restate here how the pic should
     be displayed */
     .twopic {
-        display: flex;
+        /* display: flex; */
+        display: inline-block;
         justify-content: space-evenly;
         position: relative;
         width: 100%;
